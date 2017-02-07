@@ -38,6 +38,8 @@ public class ContactService {
                 Contact contact = new Contact();
                 contact.setFirstName(fnames[r.nextInt(fnames.length)]);
                 contact.setLastName(lnames[r.nextInt(fnames.length)]);
+                contact.setStartDate(cal.getTime());
+                contact.setEndDate(cal.getTime());
                 contact.setEmail(contact.getFirstName().toLowerCase() + "@"
                         + contact.getLastName().toLowerCase() + ".com");
                 contact.setPhone("+ 358 555 " + (100 + r.nextInt(900)));

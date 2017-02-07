@@ -20,8 +20,8 @@ public class Contact implements Serializable, Cloneable {
     private String firstName = "";
     private String lastName = "";
     private String task = "";
-    private String startDate = "";
-    private String endDate = "";
+    private Date startDate;
+    private Date endDate;
     private String phone = "";
     private String email = "";
     private Date birthDate;
@@ -58,19 +58,19 @@ public class Contact implements Serializable, Cloneable {
 		this.task = task;
 	}
 
-	public String getStartDate() {
+	public Date getStartDate() {
 		return startDate;
 	}
 
-	public void setStartDate(String startDate) {
+	public void setStartDate(Date startDate) {
 		this.startDate = startDate;
 	}
 
-	public String getEndDate() {
+	public Date getEndDate() {
 		return endDate;
 	}
 
-	public void setEndDate(String endDate) {
+	public void setEndDate(Date endDate) {
 		this.endDate = endDate;
 	}
 
